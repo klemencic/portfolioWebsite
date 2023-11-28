@@ -8,11 +8,8 @@
     <link rel="stylesheet" href="mediaQueries.css">
 </head>
 <body>
-    </script src="script.js">
     <nav id="desktopNav">
-        <div class="logo">
-            Matej Klemenčič
-        </div>
+        <div class="logo">Matej Klemenčič</div>
         <div>
             <ul class="navLinks">
                 <li><a href="#O_meni">O meni</a></li>
@@ -23,5 +20,47 @@
             </ul>
         </div>
     </nav>
+    <nav id="dropdownNav">
+        <div class="logo">Matej Klemenčič</div> 
+        <div class="dropdownMenu">
+            <div class="dropdownIcon" onclick="toggleDropdown()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menuLinks">
+                <li><a href="#O_meni" onclick="toggleDropdown()">O meni</a></li>
+                <li><a href="#Vescine" onclick="toggleDropdown()">Veščine</a></li> 
+                <li><a href="#Projekti" onclick="toggleDropdown()">Projekti</a></li> 
+                <li><a href="#Kontakt" onclick="toggleDropdown()">Kontakt</a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        
+        <div class = "introSection">
+            <div class="introSection-img">
+                <img src="./assets/github.png">
+            </div>
+            <div class="introSection-txt">
+                <p>Pozdravljeni, sem</p>
+                <h1 class="title">Matej Klemenčič</h1>
+                <p>Študent Informatike in tehnologij komuniciranja</p>
+            </div>
+        </div>
+
+        <div class="oMeni">
+            <h1>O MENI</h1>
+            <p>Sem študent 2. letnika informatike na Fakulteti za Elektrotehniko, Računalništvo in Informatiko v Mariboru. Že od srednje šole sem imel strast za delo z računalnikom in hrepenenje po novem znanju. Najbolj me zanima programiranje v C#, bolj podrobno v .NET Frameworku in spletne tehnologije (HTML, CSS, JavaScript…) za gradnjo spletnih strani (front-end in back-end). Dokaj hitro se naučim nove stvari in veščine, zato imam veliko željo po praktičnem delu v programerskem svetu in še večjo željo po učenju</p>
+        </div>
+
+        <div class="vescine">
+            <h1>Veščine</h1>
+            
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

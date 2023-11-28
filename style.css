@@ -43,3 +43,144 @@ nav {
     list-style: none;
     font-size: 1.5rem;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color:white ;
+}
+
+a:hover{
+    color:grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem ;  
+    text-decoration-color: rgb(181,181,181);  
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+/*DROPDOWN MENU */
+
+#dropdownNav {
+    display:none;
+}
+
+.dropdownMenu{
+    position: relative;
+    display:inline-block;   
+}
+
+.dropdownIcon{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:24px;
+    width:30px;
+    cursor:pointer;
+}
+
+.dropdownIcon span{
+    width:100%;
+    height:2px;
+    background-color: black;  
+    transition: all 0.3 ease-in-out;
+}  
+
+.menuLinks{
+    position:absolute;
+    top:100%;
+    right:0;
+    background-color: white;
+    width:fit-content;
+    max-height: 0;
+    overflow:hidden;
+    transition: all 0.3 ease-in-out;
+
+}
+
+.menuLinks a {
+    display:block;
+    padding:10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color:black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menuLinks li{
+    list-style: none;    
+}
+
+.menuLinks.open{
+    max-height: 300px;
+}
+
+.dropdownIcon.open span:first-child{
+    transform:rotate(45deg) translate(10px, 5px);
+}
+.dropdownIcon.open span:nth-child(2){
+    opacity:0;
+}
+.dropdownIcon.open span:last-child{
+    transform:rotate(-45deg) translate(10px, -5px);
+}
+
+.dropdownIcon span:first-child{
+    transform:none;
+}
+.dropdownIcon span:first-child{
+    opacity:1;
+}
+.dropdownIcon span:first-child{
+    transform:none;
+}
+/* BODY */
+
+#profile{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.introSection{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introSection-img{
+    position: relative;
+    float:left;
+}
+
+.introSection-img img{
+    height:350px;
+    width: auto;
+    margin-right: 100px;
+}
+
+.introSection-txt{
+    display:grid;
+   
+    position: relative;
+    right: -1%;
+    bottom: 55%;
+    overflow:hidden;  
+
+}
+
+.oMeni{
+   margin-top: 30px;
+   clear:both;
+   margin-left: 200px;
+   margin-right: 200px;
+}
+
+.vescine{
+   margin-top: 30px;
+   margin-left: 200px;
+   margin-right: 200px;
+}
